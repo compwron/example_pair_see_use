@@ -1,10 +1,10 @@
 require 'pair_see'
 require 'pry'
+
 class User
-  
-  def initialize 
-  	binding.pry
-    s = PairSee::Seer.new('.')
+  def initialize
+    log_lines = PairSee::LogLines.new('.', '0-1-1')
+    s = PairSee::Seer.new(log_lines, 'config/config.yml')
     p s.commits_not_by_known_pair
     p s.all_most_recent_commits
     p s.recommended_pairings
