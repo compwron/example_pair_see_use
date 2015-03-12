@@ -5,10 +5,10 @@ GEM
     diff-lcs (1.2.5)
     git (1.2.9.1)
     method_source (0.8.2)
-    pair_see (0.1.0)
-      git
-      trollop
-      yamler
+    pair_see (0.1.1)
+      git (~> 1.2)
+      trollop (~> 2.0)
+      yamler (~> 0.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -34,6 +34,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pair_see
+  pair_see (= 0.1.1)
   pry
   rspec
