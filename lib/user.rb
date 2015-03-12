@@ -1,5 +1,6 @@
 require 'pair_see'
 require 'pry'
+require 'ostruct'
 
 class User
   def initialize
